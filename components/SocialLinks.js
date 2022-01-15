@@ -57,4 +57,8 @@ const KidsContainer = styled.div`
     background-repeat: no-repeat;
     background-image: url('https://static-mh.content.disney.io/starwars/assets/shared/icon_kids-dc39fc54f6c2.svg');
   }
+
+  :hover > a {
+    background-color: #ccc;
+  }
 `

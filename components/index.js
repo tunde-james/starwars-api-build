@@ -1,5 +1,6 @@
 export { default as Header } from './Header'
 export { default as Navbar } from './Navbar'
+export { default as NavbarLink } from './NavbarLink'
 export { default as Footer } from './Footer'
 export { default as Character } from './Character'
 export { default as SocialLinks } from './SocialLinks'
