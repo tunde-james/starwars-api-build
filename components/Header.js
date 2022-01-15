@@ -52,7 +52,7 @@ const HeaderContainer = styled.div`
     margin-top: -40px;
     margin-bottom: -20px;
     height: 180px;
-    filter: brightness(0) invert(1)
+    filter: brightness(0) invert(1);
   }
 `
 
@@ -60,6 +60,76 @@ const HeaderLeft = styled.div``
 
 const HeaderRight = styled.div``
 
-const HeaderSearch = styled.div``
+const HeaderSearch = styled.div`
+  width: 26px;
+  min-width: 26px;
+  border-radius: 4px;
+  background-color: #343434;
+  box-shadow: none;
+  border: 0;
+  position: relative;
+  width: 248px;
+  height: 40px;
+  transition: opacity 350ms;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+  opacity: 0.7;
 
-const HeaderActions = styled.div``
+  :focus-within {
+    opacity: 1;
+  }
+
+  > input {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-family: inherit;
+    font-size: 0.9375rem;
+    color: #fff;
+  }
+
+  > input::placeholder {
+    opacity: 1;
+    color: grey;
+  }
+
+  > img {
+    object-fit: contain;
+    height: 20px;
+  }
+`
+
+const HeaderActions = styled.div`
+  width: 100%;
+  margin-top: 10px;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  > button {
+    background: transparent;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 0.875rem;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    transition: color 200ms;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    :hover {
+      color: #ccc;
+    }
+  }
+
+  > span {
+    color: #343434;
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+`

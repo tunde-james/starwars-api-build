@@ -4,10 +4,10 @@ import { useState } from 'react'
 import { Character } from '../components'
 
 export default function Characters({ characters }) {
-  const [value, setValue] = useState(10)
+  const [value, setValue] = useState(12)
 
   const handleShowMore = () => {
-    setValue(value + 10)
+    setValue(value + 12)
   }
 
   return (
@@ -38,7 +38,7 @@ export default function Characters({ characters }) {
 
 export async function getStaticProps(context) {
   const characters = await fetch(
-    `https://akabab.github.io/starwars-api/api/all.json`
+    'https://akabab.github.io/starwars-api/api/all.json'
   ).then((res) => res.json())
 
   return {
@@ -55,7 +55,7 @@ const CharacterContainer = styled.div`
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 200px;
-  padding: 30px;
+  padding: 60px;
   gap: 25px;
   background-color: #151515;
 `
