@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { NavbarLink } from '.'
 
-export default function Navbar() {
+function Navbar() {
   return (
     <NavbarContainer>
       <NavbarLinks>
@@ -17,9 +17,11 @@ export default function Navbar() {
   )
 }
 
+export default Navbar
+
 const NavbarContainer = styled.div`
   border-top: 1px solid #343434;
-  background-color: #000;
+  background-color: black;
   width: 100%;
   box-shadow: 0 1px 3px rgb(0 0 0 / 30%);
   display: flex;
@@ -36,5 +38,5 @@ const NavbarContainer = styled.div`
 const NavbarLinks = styled.div`
   display: flex;
   align-items: center;
-  height: 100%
+  height: 100%;
 `

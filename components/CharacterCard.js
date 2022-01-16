@@ -71,7 +71,7 @@ const CardContainer = styled.div`
 const CharacterInfo = styled.div`
   border-top-right-radius: 6px;
   border-bottom-right-radius: 6px;
-  width: 30vw;
+  width: 40vw;
   padding: 20px;
   background-image: url('https://static-mh.content.disney.io/starwars/assets/shared/bg_hash@2x-bd5b31294ea9.png');
   background-size: 7px;
