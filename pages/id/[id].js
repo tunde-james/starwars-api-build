@@ -28,7 +28,17 @@ export async function getStaticPaths(context) {
     'https://akabab.github.io/starwars-api/api/all.json'
   ).then((res) => res.json())
 
-  const paths = characters.map((character) => `/id/${character.id}.json`)
+  const paths = characters
+    .filter(
+      (character) =>
+        character.id !== 28 &&
+        character.id !== 44 &&
+        character.id !== 51 &&
+        character.id !== 53 &&
+        character.id !== 64 &&
+        character.id !== 77
+    )
+    .map((character) => `/id/${character.id}.json`)
 
   return {
     paths,
